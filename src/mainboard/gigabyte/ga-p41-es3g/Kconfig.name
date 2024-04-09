@@ -1,0 +1,2 @@
+config BOARD_GIGABYTE_GA_P41_ES3G
+	bool "GA-P41-ES3G"

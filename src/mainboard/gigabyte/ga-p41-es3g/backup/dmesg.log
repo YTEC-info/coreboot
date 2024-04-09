@@ -1,0 +1,1102 @@
+[    0.000000] Linux version 5.10.0-9-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.70-1 (2021-09-30)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-9-amd64 root=UUID=1d70fc64-34bc-4a30-a447-59a6791a9360 ro quiet iomem=relaxed
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Enabled xstate features 0x3, context size is 576 bytes, using 'standard' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009f7ff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f800-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000cfedffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000cfee0000-0x00000000cfee2fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cfee3000-0x00000000cfeeffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000cfef0000-0x00000000cfefffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f4000000-0x00000000f7ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000012fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.4 present.
+[    0.000000] DMI: Gigabyte Technology Co., Ltd. P41-ES3G/P41-ES3G, BIOS F7 08/19/2010
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 3000.186 MHz processor
+[    0.000798] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000802] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000807] last_pfn = 0x130000 max_arch_pfn = 0x400000000
+[    0.000812] MTRR default type: uncachable
+[    0.000813] MTRR fixed ranges enabled:
+[    0.000815]   00000-9FFFF write-back
+[    0.000816]   A0000-BFFFF uncachable
+[    0.000817]   C0000-CDFFF write-protect
+[    0.000818]   CE000-EFFFF uncachable
+[    0.000819]   F0000-FFFFF write-through
+[    0.000820] MTRR variable ranges enabled:
+[    0.000821]   0 base 0000000000 mask 0F00000000 write-back
+[    0.000823]   1 base 00E0000000 mask 0FE0000000 uncachable
+[    0.000824]   2 base 00D0000000 mask 0FF0000000 uncachable
+[    0.000825]   3 base 0100000000 mask 0FC0000000 write-back
+[    0.000826]   4 base 0130000000 mask 0FF0000000 uncachable
+[    0.000828]   5 base 00CFF00000 mask 0FFFF00000 uncachable
+[    0.000828]   6 disabled
+[    0.000829]   7 disabled
+[    0.002390] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.002588] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002592] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002592] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002593] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002594] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002595] mtrr: your BIOS has configured an incorrect mask, fixing it.
+[    0.002601] e820: update [mem 0xcff00000-0xffffffff] usable ==> reserved
+[    0.002608] last_pfn = 0xcfee0 max_arch_pfn = 0x400000000
+[    0.007461] found SMP MP-table at [mem 0x000f52b0-0x000f52bf]
+[    0.019732] RAMDISK: [mem 0x349af000-0x364cefff]
+[    0.019736] ACPI: Early table checksum verification disabled
+[    0.019740] ACPI: RSDP 0x00000000000F6CC0 000014 (v00 GBT   )
+[    0.019744] ACPI: RSDT 0x00000000CFEE3040 00003C (v01 GBT    GBTUACPI 42302E31 GBTU 01010101)
+[    0.019750] ACPI: FACP 0x00000000CFEE30C0 000074 (v01 GBT    GBTUACPI 42302E31 GBTU 01010101)
+[    0.019756] ACPI: DSDT 0x00000000CFEE3180 003AA5 (v01 GBT    GBTUACPI 00001000 MSFT 0100000C)
+[    0.019760] ACPI: FACS 0x00000000CFEE0000 000040
+[    0.019764] ACPI: HPET 0x00000000CFEE6D80 000038 (v01 GBT    GBTUACPI 42302E31 GBTU 00000098)
+[    0.019768] ACPI: MCFG 0x00000000CFEE6E00 00003C (v01 GBT    GBTUACPI 42302E31 GBTU 01010101)
+[    0.019772] ACPI: TAMG 0x00000000CFEE6E40 006512 (v01 GBT    GBT   B0 5455312E BG?? 00020101)
+[    0.019775] ACPI: APIC 0x00000000CFEE6C80 000084 (v01 GBT    GBTUACPI 42302E31 GBTU 01010101)
+[    0.019779] ACPI: SSDT 0x00000000CFEEDCA0 0003AB (v01 PmRef  CpuPm    00003000 INTL 20040311)
+[    0.019783] ACPI: Reserving FACP table memory at [mem 0xcfee30c0-0xcfee3133]
+[    0.019784] ACPI: Reserving DSDT table memory at [mem 0xcfee3180-0xcfee6c24]
+[    0.019785] ACPI: Reserving FACS table memory at [mem 0xcfee0000-0xcfee003f]
+[    0.019786] ACPI: Reserving HPET table memory at [mem 0xcfee6d80-0xcfee6db7]
+[    0.019787] ACPI: Reserving MCFG table memory at [mem 0xcfee6e00-0xcfee6e3b]
+[    0.019788] ACPI: Reserving TAMG table memory at [mem 0xcfee6e40-0xcfeed351]
+[    0.019789] ACPI: Reserving APIC table memory at [mem 0xcfee6c80-0xcfee6d03]
+[    0.019790] ACPI: Reserving SSDT table memory at [mem 0xcfeedca0-0xcfeee04a]
+[    0.019801] ACPI: Local APIC address 0xfee00000
+[    0.019854] No NUMA configuration found
+[    0.019855] Faking a node at [mem 0x0000000000000000-0x000000012fffffff]
+[    0.019867] NODE_DATA(0) allocated [mem 0x12ffd2000-0x12fffbfff]
+[    0.020266] Zone ranges:
+[    0.020268]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.020269]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.020271]   Normal   [mem 0x0000000100000000-0x000000012fffffff]
+[    0.020273]   Device   empty
+[    0.020274] Movable zone start for each node
+[    0.020276] Early memory node ranges
+[    0.020278]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.020279]   node   0: [mem 0x0000000000100000-0x00000000cfedffff]
+[    0.020280]   node   0: [mem 0x0000000100000000-0x000000012fffffff]
+[    0.020282] Initmem setup node 0 [mem 0x0000000000001000-0x000000012fffffff]
+[    0.020284] On node 0 totalpages: 1048190
+[    0.020285]   DMA zone: 64 pages used for memmap
+[    0.020286]   DMA zone: 21 pages reserved
+[    0.020287]   DMA zone: 3998 pages, LIFO batch:0
+[    0.020289]   DMA32 zone: 13244 pages used for memmap
+[    0.020290]   DMA32 zone: 847584 pages, LIFO batch:63
+[    0.020291]   Normal zone: 3072 pages used for memmap
+[    0.020291]   Normal zone: 196608 pages, LIFO batch:63
+[    0.020296] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.020346] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.041729] On node 0, zone Normal: 288 pages in unavailable ranges
+[    0.041871] ACPI: PM-Timer IO Port: 0x408
+[    0.041874] ACPI: Local APIC address 0xfee00000
+[    0.041882] ACPI: LAPIC_NMI (acpi_id[0x00] dfl dfl lint[0x1])
+[    0.041884] ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])
+[    0.041885] ACPI: LAPIC_NMI (acpi_id[0x02] dfl dfl lint[0x1])
+[    0.041885] ACPI: LAPIC_NMI (acpi_id[0x03] dfl dfl lint[0x1])
+[    0.041896] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.041898] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.041901] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.041902] ACPI: IRQ0 used by override.
+[    0.041903] ACPI: IRQ9 used by override.
+[    0.041905] Using ACPI (MADT) for SMP configuration information
+[    0.041907] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.041914] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.041931] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.041933] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.041934] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.041935] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.041936] PM: hibernation: Registered nosave memory: [mem 0xcfee0000-0xcfee2fff]
+[    0.041937] PM: hibernation: Registered nosave memory: [mem 0xcfee3000-0xcfeeffff]
+[    0.041938] PM: hibernation: Registered nosave memory: [mem 0xcfef0000-0xcfefffff]
+[    0.041938] PM: hibernation: Registered nosave memory: [mem 0xcff00000-0xf3ffffff]
+[    0.041939] PM: hibernation: Registered nosave memory: [mem 0xf4000000-0xf7ffffff]
+[    0.041940] PM: hibernation: Registered nosave memory: [mem 0xf8000000-0xfebfffff]
+[    0.041941] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xffffffff]
+[    0.041943] [mem 0xcff00000-0xf3ffffff] available for PCI devices
+[    0.041944] Booting paravirtualized kernel on bare hardware
+[    0.041949] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.046816] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.047440] percpu: Embedded 54 pages/cpu s184152 r8192 d28840 u524288
+[    0.047446] pcpu-alloc: s184152 r8192 d28840 u524288 alloc=1*2097152
+[    0.047448] pcpu-alloc: [0] 0 1 2 3 
+[    0.047483] Built 1 zonelists, mobility grouping on.  Total pages: 1031789
+[    0.047484] Policy zone: Normal
+[    0.047486] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-9-amd64 root=UUID=1d70fc64-34bc-4a30-a447-59a6791a9360 ro quiet iomem=relaxed
+[    0.048355] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.048790] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.048841] mem auto-init: stack:off, heap alloc:on, heap free:off
+[    0.093518] Memory: 3408876K/4192760K available (12295K kernel code, 2544K rwdata, 7560K rodata, 2392K init, 3700K bss, 201448K reserved, 0K cma-reserved)
+[    0.093530] random: get_random_u64 called from __kmem_cache_create+0x2a/0x540 with crng_init=0
+[    0.093678] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.093697] Kernel/User page tables isolation: enabled
+[    0.093721] ftrace: allocating 36426 entries in 143 pages
+[    0.106526] ftrace: allocated 143 pages with 5 groups
+[    0.106738] rcu: Hierarchical RCU implementation.
+[    0.106740] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+[    0.106741] 	Rude variant of Tasks RCU enabled.
+[    0.106742] 	Tracing variant of Tasks RCU enabled.
+[    0.106743] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.106744] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.111087] NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+[    0.115766] Console: colour VGA+ 80x25
+[    0.115778] printk: console [tty0] enabled
+[    0.115795] ACPI: Core revision 20200925
+[    0.115873] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+[    0.115885] APIC: Switch to symmetric I/O mode setup
+[    0.116241] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.135884] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2b3ef4ee385, max_idle_ns: 440795280321 ns
+[    0.135889] Calibrating delay loop (skipped), value calculated using timer frequency.. 6000.37 BogoMIPS (lpj=12000744)
+[    0.135891] pid_max: default: 32768 minimum: 301
+[    0.135917] LSM: Security Framework initializing
+[    0.135927] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.135963] AppArmor: AppArmor initialized
+[    0.135965] TOMOYO Linux initialized
+[    0.136002] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.136023] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.136329] mce: CPU0: Thermal monitoring enabled (TM2)
+[    0.136333] process: using mwait in idle threads
+[    0.136337] Last level iTLB entries: 4KB 128, 2MB 4, 4MB 4
+[    0.136338] Last level dTLB entries: 4KB 256, 2MB 0, 4MB 32, 1GB 0
+[    0.136341] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.136343] Spectre V2 : Mitigation: Full generic retpoline
+[    0.136344] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.136345] Speculative Store Bypass: Vulnerable
+[    0.136347] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.136439] Freeing SMP alternatives memory: 32K
+[    0.247095] smpboot: CPU0: Intel(R) Xeon(R) CPU           E5450  @ 3.00GHz (family: 0x6, model: 0x17, stepping: 0xa)
+[    0.247268] Performance Events: PEBS fmt0+, Core2 events, 4-deep LBR, Intel PMU driver.
+[    0.247275] ... version:                2
+[    0.247276] ... bit width:              40
+[    0.247277] ... generic registers:      2
+[    0.247278] ... value mask:             000000ffffffffff
+[    0.247279] ... max period:             000000007fffffff
+[    0.247280] ... fixed-purpose events:   3
+[    0.247281] ... event mask:             0000000700000003
+[    0.247395] rcu: Hierarchical SRCU implementation.
+[    0.247885] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.247885] smp: Bringing up secondary CPUs ...
+[    0.247885] x86: Booting SMP configuration:
+[    0.247885] .... node  #0, CPUs:      #1
+[    0.247885] TSC synchronization [CPU#0 -> CPU#1]:
+[    0.247885] Measured 10103892 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.247885] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.247885]  #2 #3
+[    0.248791] smp: Brought up 1 node, 4 CPUs
+[    0.248791] smpboot: Max logical packages: 1
+[    0.248791] smpboot: Total of 4 processors activated (24001.48 BogoMIPS)
+[    0.256578] node 0 deferred pages initialised in 4ms
+[    0.256583] devtmpfs: initialized
+[    0.256583] x86/mm: Memory block size: 128MB
+[    0.256583] PM: Registering ACPI NVS region [mem 0xcfee0000-0xcfee2fff] (12288 bytes)
+[    0.256583] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.256583] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.256583] pinctrl core: initialized pinctrl subsystem
+[    0.256583] NET: Registered protocol family 16
+[    0.256583] audit: initializing netlink subsys (disabled)
+[    0.256583] audit: type=2000 audit(1692729592.140:1): state=initialized audit_enabled=0 res=1
+[    0.256583] thermal_sys: Registered thermal governor 'fair_share'
+[    0.256583] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.256583] thermal_sys: Registered thermal governor 'step_wise'
+[    0.256583] thermal_sys: Registered thermal governor 'user_space'
+[    0.256583] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.256583] cpuidle: using governor ladder
+[    0.256583] cpuidle: using governor menu
+[    0.256583] ACPI: bus type PCI registered
+[    0.256583] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.256583] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf4000000-0xf7ffffff] (base 0xf4000000)
+[    0.256583] PCI: MMCONFIG at [mem 0xf4000000-0xf7ffffff] reserved in E820
+[    0.256583] pmd_set_huge: Cannot satisfy [mem 0xf4000000-0xf4200000] with a huge-page mapping due to MTRR override.
+[    0.256583] PCI: Using configuration type 1 for base access
+[    0.260020] Kprobes globally optimized
+[    0.260025] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.452215] ACPI: Added _OSI(Module Device)
+[    0.452215] ACPI: Added _OSI(Processor Device)
+[    0.452215] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.452215] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.452215] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.452215] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.452215] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.453531] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    0.456025] ACPI: Dynamic OEM Table Load:
+[    0.456031] ACPI: SSDT 0xFFFF8B48C0879C00 00022A (v01 PmRef  Cpu0Ist  00003000 INTL 20040311)
+[    0.456272] ACPI: Dynamic OEM Table Load:
+[    0.456276] ACPI: SSDT 0xFFFF8B48C086E600 000152 (v01 PmRef  Cpu1Ist  00003000 INTL 20040311)
+[    0.456490] ACPI: Dynamic OEM Table Load:
+[    0.456494] ACPI: SSDT 0xFFFF8B48C086EC00 000152 (v01 PmRef  Cpu2Ist  00003000 INTL 20040311)
+[    0.456709] ACPI: Dynamic OEM Table Load:
+[    0.456713] ACPI: SSDT 0xFFFF8B48C086E800 000152 (v01 PmRef  Cpu3Ist  00003000 INTL 20040311)
+[    0.457041] ACPI: Interpreter enabled
+[    0.457059] ACPI: (supports S0 S3 S4 S5)
+[    0.457061] ACPI: Using IOAPIC for interrupt routing
+[    0.457080] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.457204] ACPI: Enabled 8 GPEs in block 00 to 1F
+[    0.457726] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3f])
+[    0.457731] acpi PNP0A03:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.457905] PCI host bridge to bus 0000:00
+[    0.457908] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.457909] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.457911] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.457912] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000dffff window]
+[    0.457913] pci_bus 0000:00: root bus resource [mem 0xcff00000-0xfebfffff window]
+[    0.457915] pci_bus 0000:00: root bus resource [bus 00-3f]
+[    0.457928] pci 0000:00:00.0: [8086:2e30] type 00 class 0x060000
+[    0.457946] pci 0000:00:00.0: DMAR: Disabling IOMMU for graphics on this chipset
+[    0.457947] pci 0000:00:00.0: DMAR: Forcing write-buffer flush capability
+[    0.458020] pci 0000:00:01.0: [8086:2e31] type 01 class 0x060400
+[    0.458055] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.458145] pci 0000:00:1b.0: [8086:27d8] type 00 class 0x040300
+[    0.458160] pci 0000:00:1b.0: reg 0x10: [mem 0xfdff8000-0xfdffbfff 64bit]
+[    0.458222] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.458319] pci 0000:00:1c.0: [8086:27d0] type 01 class 0x060400
+[    0.458381] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.458480] pci 0000:00:1c.1: [8086:27d2] type 01 class 0x060400
+[    0.458546] pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+[    0.458642] pci 0000:00:1d.0: [8086:27c8] type 00 class 0x0c0300
+[    0.458676] pci 0000:00:1d.0: reg 0x20: [io  0xff00-0xff1f]
+[    0.458772] pci 0000:00:1d.1: [8086:27c9] type 00 class 0x0c0300
+[    0.458805] pci 0000:00:1d.1: reg 0x20: [io  0xfe00-0xfe1f]
+[    0.458897] pci 0000:00:1d.2: [8086:27ca] type 00 class 0x0c0300
+[    0.458930] pci 0000:00:1d.2: reg 0x20: [io  0xfd00-0xfd1f]
+[    0.459030] pci 0000:00:1d.3: [8086:27cb] type 00 class 0x0c0300
+[    0.459064] pci 0000:00:1d.3: reg 0x20: [io  0xfc00-0xfc1f]
+[    0.459168] pci 0000:00:1d.7: [8086:27cc] type 00 class 0x0c0320
+[    0.459182] pci 0000:00:1d.7: reg 0x10: [mem 0xfdfff000-0xfdfff3ff]
+[    0.459320] pci 0000:00:1e.0: [8086:244e] type 01 class 0x060401
+[    0.459443] pci 0000:00:1f.0: [8086:27b8] type 00 class 0x060100
+[    0.459510] pci 0000:00:1f.0: quirk: [io  0x0400-0x047f] claimed by ICH6 ACPI/GPIO/TCO
+[    0.459514] pci 0000:00:1f.0: quirk: [io  0x0480-0x04bf] claimed by ICH6 GPIO
+[    0.459517] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at 0800 (mask 000f)
+[    0.459519] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 2 PIO at 0290 (mask 000f)
+[    0.459618] pci 0000:00:1f.2: [8086:27c0] type 00 class 0x010180
+[    0.459628] pci 0000:00:1f.2: reg 0x10: [io  0x0000-0x0007]
+[    0.459634] pci 0000:00:1f.2: reg 0x14: [io  0x0000-0x0003]
+[    0.459640] pci 0000:00:1f.2: reg 0x18: [io  0x0000-0x0007]
+[    0.459646] pci 0000:00:1f.2: reg 0x1c: [io  0x0000-0x0003]
+[    0.459652] pci 0000:00:1f.2: reg 0x20: [io  0xf900-0xf90f]
+[    0.459664] pci 0000:00:1f.2: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.459665] pci 0000:00:1f.2: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.459667] pci 0000:00:1f.2: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.459668] pci 0000:00:1f.2: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.459685] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.459763] pci 0000:00:1f.3: [8086:27da] type 00 class 0x0c0500
+[    0.459808] pci 0000:00:1f.3: reg 0x20: [io  0x0500-0x051f]
+[    0.459949] pci 0000:01:00.0: [10de:0fc1] type 00 class 0x030000
+[    0.459961] pci 0000:01:00.0: reg 0x10: [mem 0xfb000000-0xfbffffff]
+[    0.459970] pci 0000:01:00.0: reg 0x14: [mem 0xd0000000-0xdfffffff 64bit pref]
+[    0.459979] pci 0000:01:00.0: reg 0x1c: [mem 0xee000000-0xefffffff 64bit pref]
+[    0.459985] pci 0000:01:00.0: reg 0x24: [io  0xdf00-0xdf7f]
+[    0.459991] pci 0000:01:00.0: reg 0x30: [mem 0x00000000-0x0007ffff pref]
+[    0.460060] pci 0000:01:00.0: 32.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x16 link at 0000:00:01.0 (capable of 126.016 Gb/s with 8.0 GT/s PCIe x16 link)
+[    0.460104] pci 0000:01:00.1: [10de:0e1b] type 00 class 0x040300
+[    0.460115] pci 0000:01:00.1: reg 0x10: [mem 0xfcffc000-0xfcffffff]
+[    0.460233] pci 0000:00:01.0: ASPM: current common clock configuration is inconsistent, reconfiguring
+[    0.460254] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.460256] pci 0000:00:01.0:   bridge window [io  0xd000-0xdfff]
+[    0.460258] pci 0000:00:01.0:   bridge window [mem 0xfb000000-0xfcffffff]
+[    0.460260] pci 0000:00:01.0:   bridge window [mem 0xd0000000-0xefffffff 64bit pref]
+[    0.460295] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.460333] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.460336] pci 0000:00:1c.1:   bridge window [io  0xf000-0xffff]
+[    0.460354] pci_bus 0000:04: extended config space not accessible
+[    0.460379] pci 0000:04:02.0: [1106:3106] type 00 class 0x020000
+[    0.460393] pci 0000:04:02.0: reg 0x10: [io  0x0000-0x00ff]
+[    0.460402] pci 0000:04:02.0: reg 0x14: [mem 0xfdeff000-0xfdeff0ff]
+[    0.460462] pci 0000:04:02.0: supports D1 D2
+[    0.460463] pci 0000:04:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.460529] pci 0000:00:1e.0: PCI bridge to [bus 04] (subtractive decode)
+[    0.460533] pci 0000:00:1e.0:   bridge window [mem 0xfde00000-0xfdefffff]
+[    0.460540] pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7 window] (subtractive decode)
+[    0.460541] pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff window] (subtractive decode)
+[    0.460543] pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000bffff window] (subtractive decode)
+[    0.460544] pci 0000:00:1e.0:   bridge window [mem 0x000c0000-0x000dffff window] (subtractive decode)
+[    0.460545] pci 0000:00:1e.0:   bridge window [mem 0xcff00000-0xfebfffff window] (subtractive decode)
+[    0.461046] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 *5 6 7 9 10 11 12 14 15)
+[    0.461100] ACPI: PCI Interrupt Link [LNKB] (IRQs *3 4 5 6 7 9 10 11 12 14 15)
+[    0.461153] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 7 9 *10 11 12 14 15)
+[    0.461206] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 9 10 *11 12 14 15)
+[    0.461258] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 7 9 10 11 12 14 15) *0, disabled.
+[    0.461311] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 7 9 10 11 12 14 15) *0, disabled.
+[    0.461364] ACPI: PCI Interrupt Link [LNK0] (IRQs 3 4 5 6 7 9 10 11 12 14 15) *0, disabled.
+[    0.461417] ACPI: PCI Interrupt Link [LNK1] (IRQs 3 4 5 6 7 *9 10 11 12 14 15)
+[    0.461556] iommu: Default domain type: Translated 
+[    0.463911] pci 0000:01:00.0: vgaarb: setting as boot VGA device
+[    0.463911] pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.463913] pci 0000:01:00.0: vgaarb: bridge control possible
+[    0.463915] vgaarb: loaded
+[    0.463998] EDAC MC: Ver: 3.0.0
+[    0.464058] NetLabel: Initializing
+[    0.464058] NetLabel:  domain hash size = 128
+[    0.464058] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.464072] NetLabel:  unlabeled traffic allowed by default
+[    0.464073] PCI: Using ACPI for IRQ routing
+[    0.465224] PCI: pci_cache_line_size set to 64 bytes
+[    0.465234] pci 0000:00:1d.0: can't claim BAR 4 [io  0xff00-0xff1f]: address conflict with PCI Bus 0000:03 [io  0xf000-0xffff]
+[    0.465238] pci 0000:00:1d.1: can't claim BAR 4 [io  0xfe00-0xfe1f]: address conflict with PCI Bus 0000:03 [io  0xf000-0xffff]
+[    0.465240] pci 0000:00:1d.2: can't claim BAR 4 [io  0xfd00-0xfd1f]: address conflict with PCI Bus 0000:03 [io  0xf000-0xffff]
+[    0.465243] pci 0000:00:1d.3: can't claim BAR 4 [io  0xfc00-0xfc1f]: address conflict with PCI Bus 0000:03 [io  0xf000-0xffff]
+[    0.465250] pci 0000:00:1f.2: can't claim BAR 4 [io  0xf900-0xf90f]: address conflict with PCI Bus 0000:03 [io  0xf000-0xffff]
+[    0.465267] e820: reserve RAM buffer [mem 0x0009f800-0x0009ffff]
+[    0.465269] e820: reserve RAM buffer [mem 0xcfee0000-0xcfffffff]
+[    0.465294] hpet: 3 channels of 0 reserved for per-cpu timers
+[    0.465297] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.465300] hpet0: 3 comparators, 64-bit 14.318180 MHz counter
+[    0.468933] clocksource: Switched to clocksource hpet
+[    0.481378] VFS: Disk quotas dquot_6.6.0
+[    0.481399] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.481556] AppArmor: AppArmor Filesystem Enabled
+[    0.481580] pnp: PnP ACPI init
+[    0.481730] pnp 00:00: disabling [io  0x0010-0x001f] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481732] pnp 00:00: disabling [io  0x0022-0x003f] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481733] pnp 00:00: disabling [io  0x0044-0x005f] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481735] pnp 00:00: disabling [io  0x0062-0x0063] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481736] pnp 00:00: disabling [io  0x0065-0x006f] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481738] pnp 00:00: disabling [io  0x0074-0x007f] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481739] pnp 00:00: disabling [io  0x0091-0x0093] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481741] pnp 00:00: disabling [io  0x00a2-0x00bf] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481742] pnp 00:00: disabling [io  0x00e0-0x00ef] because it overlaps 0000:04:02.0 BAR 0 [io  0x0000-0x00ff]
+[    0.481778] system 00:00: [io  0x04d0-0x04d1] has been reserved
+[    0.481780] system 00:00: [io  0x0290-0x029f] has been reserved
+[    0.481781] system 00:00: [io  0x0800-0x087f] has been reserved
+[    0.481783] system 00:00: [io  0x0290-0x0294] has been reserved
+[    0.481784] system 00:00: [io  0x0880-0x088f] has been reserved
+[    0.481792] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.481863] pnp 00:01: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.482118] pnp 00:02: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.482296] pnp 00:03: Plug and Play ACPI device, IDs PNP0400 (active)
+[    0.482420] system 00:04: [io  0x0400-0x04cf] could not be reserved
+[    0.482425] system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.482600] system 00:05: [mem 0xf4000000-0xf7ffffff] has been reserved
+[    0.482605] system 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.482749] system 00:06: [mem 0x000ce400-0x000cffff] has been reserved
+[    0.482751] system 00:06: [mem 0x000f0000-0x000f7fff] could not be reserved
+[    0.482753] system 00:06: [mem 0x000f8000-0x000fbfff] could not be reserved
+[    0.482754] system 00:06: [mem 0x000fc000-0x000fffff] could not be reserved
+[    0.482756] system 00:06: [mem 0xcfee0000-0xcfeeffff] could not be reserved
+[    0.482758] system 00:06: [mem 0x00000000-0x0009ffff] could not be reserved
+[    0.482759] system 00:06: [mem 0x00100000-0xcfedffff] could not be reserved
+[    0.482761] system 00:06: [mem 0xcfef0000-0xcfefffff] has been reserved
+[    0.482762] system 00:06: [mem 0xfec00000-0xfec00fff] could not be reserved
+[    0.482764] system 00:06: [mem 0xfed13000-0xfed1dfff] has been reserved
+[    0.482765] system 00:06: [mem 0xfed20000-0xfed8ffff] has been reserved
+[    0.482767] system 00:06: [mem 0xfee00000-0xfee00fff] has been reserved
+[    0.482768] system 00:06: [mem 0xffb00000-0xffb7ffff] has been reserved
+[    0.482769] system 00:06: [mem 0xfff00000-0xffffffff] has been reserved
+[    0.482771] system 00:06: [mem 0x000e0000-0x000effff] has been reserved
+[    0.482775] system 00:06: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.482780] pnp: PnP ACPI: found 7 devices
+[    0.489190] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.489259] NET: Registered protocol family 2
+[    0.489350] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.489971] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.490026] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.490148] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    0.490208] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.490256] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.490276] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.490560] NET: Registered protocol family 1
+[    0.490567] NET: Registered protocol family 44
+[    0.490580] pci 0000:00:1c.0: bridge window [io  0x1000-0x0fff] to [bus 02] add_size 1000
+[    0.490583] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 02] add_size 200000 add_align 100000
+[    0.490585] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff] to [bus 02] add_size 200000 add_align 100000
+[    0.490587] pci 0000:00:1c.1: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 03] add_size 200000 add_align 100000
+[    0.490589] pci 0000:00:1c.1: bridge window [mem 0x00100000-0x000fffff] to [bus 03] add_size 200000 add_align 100000
+[    0.490606] pci 0000:00:1c.0: BAR 14: assigned [mem 0xf0000000-0xf01fffff]
+[    0.490609] pci 0000:00:1c.0: BAR 15: assigned [mem 0xf0200000-0xf03fffff 64bit pref]
+[    0.490611] pci 0000:00:1c.1: BAR 14: assigned [mem 0xf0400000-0xf05fffff]
+[    0.490614] pci 0000:00:1c.1: BAR 15: assigned [mem 0xf0600000-0xf07fffff 64bit pref]
+[    0.490617] pci 0000:00:1c.0: BAR 13: assigned [io  0x1000-0x1fff]
+[    0.490619] pci 0000:00:1e.0: BAR 13: assigned [io  0x2000-0x2fff]
+[    0.490621] pci 0000:00:1d.0: BAR 4: assigned [io  0x3000-0x301f]
+[    0.490626] pci 0000:00:1d.1: BAR 4: assigned [io  0x3020-0x303f]
+[    0.490630] pci 0000:00:1d.2: BAR 4: assigned [io  0x3040-0x305f]
+[    0.490633] pci 0000:00:1d.3: BAR 4: assigned [io  0x3060-0x307f]
+[    0.490637] pci 0000:00:1f.2: BAR 4: assigned [io  0x3080-0x308f]
+[    0.490643] pci 0000:01:00.0: BAR 6: assigned [mem 0xfc000000-0xfc07ffff pref]
+[    0.490645] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.490647] pci 0000:00:01.0:   bridge window [io  0xd000-0xdfff]
+[    0.490650] pci 0000:00:01.0:   bridge window [mem 0xfb000000-0xfcffffff]
+[    0.490652] pci 0000:00:01.0:   bridge window [mem 0xd0000000-0xefffffff 64bit pref]
+[    0.490654] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.490656] pci 0000:00:1c.0:   bridge window [io  0x1000-0x1fff]
+[    0.490659] pci 0000:00:1c.0:   bridge window [mem 0xf0000000-0xf01fffff]
+[    0.490662] pci 0000:00:1c.0:   bridge window [mem 0xf0200000-0xf03fffff 64bit pref]
+[    0.490666] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.490668] pci 0000:00:1c.1:   bridge window [io  0xf000-0xffff]
+[    0.490671] pci 0000:00:1c.1:   bridge window [mem 0xf0400000-0xf05fffff]
+[    0.490674] pci 0000:00:1c.1:   bridge window [mem 0xf0600000-0xf07fffff 64bit pref]
+[    0.490679] pci 0000:04:02.0: BAR 0: assigned [io  0x2000-0x20ff]
+[    0.490682] pci 0000:00:1e.0: PCI bridge to [bus 04]
+[    0.490684] pci 0000:00:1e.0:   bridge window [io  0x2000-0x2fff]
+[    0.490687] pci 0000:00:1e.0:   bridge window [mem 0xfde00000-0xfdefffff]
+[    0.490693] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.490695] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.490696] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.490697] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000dffff window]
+[    0.490699] pci_bus 0000:00: resource 8 [mem 0xcff00000-0xfebfffff window]
+[    0.490700] pci_bus 0000:01: resource 0 [io  0xd000-0xdfff]
+[    0.490701] pci_bus 0000:01: resource 1 [mem 0xfb000000-0xfcffffff]
+[    0.490703] pci_bus 0000:01: resource 2 [mem 0xd0000000-0xefffffff 64bit pref]
+[    0.490704] pci_bus 0000:02: resource 0 [io  0x1000-0x1fff]
+[    0.490705] pci_bus 0000:02: resource 1 [mem 0xf0000000-0xf01fffff]
+[    0.490706] pci_bus 0000:02: resource 2 [mem 0xf0200000-0xf03fffff 64bit pref]
+[    0.490708] pci_bus 0000:03: resource 0 [io  0xf000-0xffff]
+[    0.490709] pci_bus 0000:03: resource 1 [mem 0xf0400000-0xf05fffff]
+[    0.490710] pci_bus 0000:03: resource 2 [mem 0xf0600000-0xf07fffff 64bit pref]
+[    0.490711] pci_bus 0000:04: resource 0 [io  0x2000-0x2fff]
+[    0.490713] pci_bus 0000:04: resource 1 [mem 0xfde00000-0xfdefffff]
+[    0.490714] pci_bus 0000:04: resource 4 [io  0x0000-0x0cf7 window]
+[    0.490715] pci_bus 0000:04: resource 5 [io  0x0d00-0xffff window]
+[    0.490717] pci_bus 0000:04: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.490718] pci_bus 0000:04: resource 7 [mem 0x000c0000-0x000dffff window]
+[    0.490719] pci_bus 0000:04: resource 8 [mem 0xcff00000-0xfebfffff window]
+[    0.507976] pci 0000:00:1d.7: quirk_usb_early_handoff+0x0/0x700 took 16330 usecs
+[    0.508007] pci 0000:01:00.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.508044] pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+[    0.508051] PCI: CLS 4 bytes, default 64
+[    0.508137] Trying to unpack rootfs image as initramfs...
+[    0.969232] Freeing initrd memory: 27776K
+[    0.969256] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.969258] software IO TLB: mapped [mem 0x00000000cbee0000-0x00000000cfee0000] (64MB)
+[    0.969885] Initialise system trusted keyrings
+[    0.969897] Key type blacklist registered
+[    0.970012] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+[    0.971426] zbud: loaded
+[    0.971670] integrity: Platform Keyring initialized
+[    0.971673] Key type asymmetric registered
+[    0.971675] Asymmetric key parser 'x509' registered
+[    0.971683] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.971763] io scheduler mq-deadline registered
+[    0.972128] pcieport 0000:00:1c.0: enabling device (0000 -> 0003)
+[    0.972335] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.972350] intel_idle: MWAIT substates: 0x2220
+[    0.972355] intel_idle: ACPI _CST not found or not usable
+[    0.972923] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.973052] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.973649] Linux agpgart interface v0.103
+[    0.973739] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+[    0.973741] AMD-Vi: AMD IOMMUv2 functionality not available on this system
+[    0.974011] i8042: PNP: No PS/2 controller found.
+[    0.974012] i8042: Probing ports directly.
+[    0.974382] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.974388] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.974544] mousedev: PS/2 mouse device common for all mice
+[    0.974594] rtc_cmos 00:01: RTC can wake from S4
+[    0.974760] rtc_cmos 00:01: registered as rtc0
+[    0.974792] rtc_cmos 00:01: setting system clock to 2023-08-22T18:39:53 UTC (1692729593)
+[    0.974815] rtc_cmos 00:01: alarms up to one month, 242 bytes nvram, hpet irqs
+[    0.974822] intel_pstate: CPU model not supported
+[    0.974913] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.975188] NET: Registered protocol family 10
+[    0.983815] Segment Routing with IPv6
+[    0.983843] mip6: Mobile IPv6
+[    0.983846] NET: Registered protocol family 17
+[    0.983941] mpls_gso: MPLS GSO support
+[    0.984240] microcode: sig=0x1067a, pf=0x40, revision=0xa0b
+[    0.984273] microcode: Microcode Update Driver: v2.2.
+[    0.984277] IPI shorthand broadcast: enabled
+[    0.984375] registered taskstats version 1
+[    0.984379] Loading compiled-in X.509 certificates
+[    1.028283] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[    1.028297] Loaded X.509 cert 'Debian Secure Boot Signer 2021 - linux: 4b6ef5abca669825178e052c84667ccbc0531f8c'
+[    1.028334] zswap: loaded using pool lzo/zbud
+[    1.028543] Key type ._fscrypt registered
+[    1.028544] Key type .fscrypt registered
+[    1.028545] Key type fscrypt-provisioning registered
+[    1.028581] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.028941] Unstable clock detected, switching default tracing clock to "global"
+               If you want to keep using the local clock, then add:
+                 "trace_clock=local"
+               on the kernel command line
+[    1.030403] Freeing unused kernel image (initmem) memory: 2392K
+[    1.055905] Write protecting the kernel read-only data: 22528k
+[    1.056641] Freeing unused kernel image (text/rodata gap) memory: 2040K
+[    1.056890] Freeing unused kernel image (rodata/data gap) memory: 632K
+[    1.100412] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.100427] x86/mm: Checking user space page tables
+[    1.141633] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.141640] Run /init as init process
+[    1.141642]   with arguments:
+[    1.141643]     /init
+[    1.141644]   with environment:
+[    1.141645]     HOME=/
+[    1.141645]     TERM=linux
+[    1.141646]     BOOT_IMAGE=/boot/vmlinuz-5.10.0-9-amd64
+[    1.159412] udevd[106]: starting version 3.2.9
+[    1.159661] random: udevd: uninitialized urandom read (16 bytes read)
+[    1.159694] random: udevd: uninitialized urandom read (16 bytes read)
+[    1.160594] udevd[107]: starting eudev-3.2.9
+[    1.169541] random: udevd: uninitialized urandom read (16 bytes read)
+[    1.178133] ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042F conflicts with OpRegion 0x000000000000042C-0x000000000000042D (\GP2C) (20200925/utaddress-204)
+[    1.178141] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[    1.178167] lpc_ich: Resource conflict(s) found affecting gpio_ich
+[    1.180906] i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+[    1.191562] ACPI: bus type USB registered
+[    1.191596] usbcore: registered new interface driver usbfs
+[    1.191605] usbcore: registered new interface driver hub
+[    1.191620] usbcore: registered new device driver usb
+[    1.194201] via-rhine 0000:04:02.0: enabling device (0086 -> 0087)
+[    1.194304] via-rhine 0000:04:02.0 (unnamed net_device) (uninitialized): Woke system up. Reason: Unknown
+[    1.194308] via-rhine 0000:04:02.0 (unnamed net_device) (uninitialized): Reset not complete yet. Trying harder.
+[    1.198313] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.202007] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.202172] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    1.202179] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 1
+[    1.202187] uhci_hcd 0000:00:1d.0: detected 2 ports
+[    1.202216] uhci_hcd 0000:00:1d.0: irq 23, io base 0x00003000
+[    1.202280] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.202282] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.202283] usb usb1: Product: UHCI Host Controller
+[    1.202284] usb usb1: Manufacturer: Linux 5.10.0-9-amd64 uhci_hcd
+[    1.202285] usb usb1: SerialNumber: 0000:00:1d.0
+[    1.202397] hub 1-0:1.0: USB hub found
+[    1.202404] hub 1-0:1.0: 2 ports detected
+[    1.202639] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    1.202644] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 2
+[    1.202650] uhci_hcd 0000:00:1d.1: detected 2 ports
+[    1.202666] uhci_hcd 0000:00:1d.1: irq 19, io base 0x00003020
+[    1.202715] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.202716] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.202718] usb usb2: Product: UHCI Host Controller
+[    1.202719] usb usb2: Manufacturer: Linux 5.10.0-9-amd64 uhci_hcd
+[    1.202720] usb usb2: SerialNumber: 0000:00:1d.1
+[    1.202813] hub 2-0:1.0: USB hub found
+[    1.202819] hub 2-0:1.0: 2 ports detected
+[    1.203009] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    1.203015] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 3
+[    1.203020] uhci_hcd 0000:00:1d.2: detected 2 ports
+[    1.203044] uhci_hcd 0000:00:1d.2: irq 18, io base 0x00003040
+[    1.203087] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.203089] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.203090] usb usb3: Product: UHCI Host Controller
+[    1.203091] usb usb3: Manufacturer: Linux 5.10.0-9-amd64 uhci_hcd
+[    1.203092] usb usb3: SerialNumber: 0000:00:1d.2
+[    1.203195] hub 3-0:1.0: USB hub found
+[    1.203202] hub 3-0:1.0: 2 ports detected
+[    1.203376] uhci_hcd 0000:00:1d.3: UHCI Host Controller
+[    1.203380] uhci_hcd 0000:00:1d.3: new USB bus registered, assigned bus number 4
+[    1.203385] uhci_hcd 0000:00:1d.3: detected 2 ports
+[    1.203406] uhci_hcd 0000:00:1d.3: irq 16, io base 0x00003060
+[    1.203456] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    1.203458] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.203459] usb usb4: Product: UHCI Host Controller
+[    1.203460] usb usb4: Manufacturer: Linux 5.10.0-9-amd64 uhci_hcd
+[    1.203461] usb usb4: SerialNumber: 0000:00:1d.3
+[    1.203558] hub 4-0:1.0: USB hub found
+[    1.203570] hub 4-0:1.0: 2 ports detected
+[    1.206274] via_rhine: 1024 cycles used @ rhine_reload_eeprom:712
+[    1.206285] via-rhine 0000:04:02.0 (unnamed net_device) (uninitialized): Invalid MAC address: ff:ff:ff:ff:ff:ff
+[    1.206341] via-rhine 0000:04:02.0 (unnamed net_device) (uninitialized): Using random MAC address: 1a:c9:6b:24:8f:99
+[    1.208698] ehci-pci: EHCI PCI platform driver
+[    1.209373] via-rhine 0000:04:02.0 eth0: VIA Rhine III at (____ptrval____), 1a:c9:6b:24:8f:99, IRQ 18
+[    1.218312] SCSI subsystem initialized
+[    1.230033] libata version 3.00 loaded.
+[    1.231520] ata_piix 0000:00:1f.2: version 2.13
+[    1.231600] ata_piix 0000:00:1f.2: MAP [ P0 P2 IDE IDE ]
+[    1.232254] scsi host0: ata_piix
+[    1.232423] scsi host1: ata_piix
+[    1.232470] ata1: SATA max UDMA/133 cmd 0x1f0 ctl 0x3f6 bmdma 0x3080 irq 14
+[    1.232471] ata2: PATA max UDMA/100 cmd 0x170 ctl 0x376 bmdma 0x3088 irq 15
+[    1.242937] ehci-pci 0000:00:1d.7: EHCI Host Controller
+[    1.242947] ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 5
+[    1.246862] ehci-pci 0000:00:1d.7: cache line size of 4 is not supported
+[    1.246868] ehci-pci 0000:00:1d.7: irq 23, io mem 0xfdfff000
+[    1.259905] ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    1.259963] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    1.259966] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.259968] usb usb5: Product: EHCI Host Controller
+[    1.259969] usb usb5: Manufacturer: Linux 5.10.0-9-amd64 ehci_hcd
+[    1.259971] usb usb5: SerialNumber: 0000:00:1d.7
+[    1.260123] hub 5-0:1.0: USB hub found
+[    1.260131] hub 5-0:1.0: 8 ports detected
+[    1.287951] hub 1-0:1.0: USB hub found
+[    1.287961] hub 1-0:1.0: 2 ports detected
+[    1.315957] hub 2-0:1.0: USB hub found
+[    1.315969] hub 2-0:1.0: 2 ports detected
+[    1.343957] hub 3-0:1.0: USB hub found
+[    1.343968] hub 3-0:1.0: 2 ports detected
+[    1.371956] hub 4-0:1.0: USB hub found
+[    1.371967] hub 4-0:1.0: 2 ports detected
+[    1.399121] ata1.00: ATA-8: WDC WD5003ABYZ-011FA0, 01.01S03, max UDMA/133
+[    1.399124] ata1.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 0/32)
+[    1.401773] scsi 0:0:0:0: Direct-Access     ATA      WDC WD5003ABYZ-0 1S03 PQ: 0 ANSI: 5
+[    1.453195] sd 0:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/466 GiB)
+[    1.453209] sd 0:0:0:0: [sda] Write Protect is off
+[    1.453211] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.453232] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    1.515901] usb 5-1: new high-speed USB device number 2 using ehci-pci
+[    1.520372]  sda: sda1 sda2 < sda5 >
+[    1.540069] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.541989] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.674667] usb 5-1: New USB device found, idVendor=18e3, idProduct=9101, bcdDevice= 0.00
+[    1.674671] usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.674673] usb 5-1: Product: Mass Storage Device
+[    1.674675] usb 5-1: Manufacturer: Generic
+[    1.674677] usb 5-1: SerialNumber: 18E3312D81B0
+[    1.679320] usb-storage 5-1:1.0: USB Mass Storage device detected
+[    1.679656] scsi host2: usb-storage 5-1:1.0
+[    1.679768] usbcore: registered new interface driver usb-storage
+[    1.681274] usbcore: registered new interface driver uas
+[    1.850658] PM: Image not found (code -22)
+[    1.939910] usb 3-1: new low-speed USB device number 2 using uhci_hcd
+[    2.128677] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    2.214926] usb 3-1: New USB device found, idVendor=04d9, idProduct=1702, bcdDevice= 1.01
+[    2.214931] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.214934] usb 3-1: Product: USB Keyboard
+[    2.214935] usb 3-1: Manufacturer:  
+[    2.284464] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[    2.363889] random: fast init done
+[    2.704693] scsi 2:0:0:0: Direct-Access     Generic  USB SD Reader    1.00 PQ: 0 ANSI: 0
+[    2.705307] scsi 2:0:0:1: Direct-Access     Generic  USB CF Reader    1.01 PQ: 0 ANSI: 0
+[    2.705805] scsi 2:0:0:2: Direct-Access     Generic  USB SM Reader    1.02 PQ: 0 ANSI: 0
+[    2.706311] scsi 2:0:0:3: Direct-Access     Generic  USB MS Reader    1.03 PQ: 0 ANSI: 0
+[    2.706557] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[    2.706702] sd 2:0:0:1: Attached scsi generic sg2 type 0
+[    2.706821] scsi 2:0:0:2: Attached scsi generic sg3 type 0
+[    2.706970] scsi 2:0:0:3: Attached scsi generic sg4 type 0
+[    2.748555] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[    2.756554] sd 2:0:0:1: [sdc] Attached SCSI removable disk
+[    2.768682] sd 2:0:0:2: [sdd] Attached SCSI removable disk
+[    2.770923] sd 2:0:0:3: [sde] Attached SCSI removable disk
+[    2.775906] usb 3-2: new low-speed USB device number 3 using uhci_hcd
+[    2.966922] usb 3-2: New USB device found, idVendor=18f8, idProduct=0f97, bcdDevice= 1.00
+[    2.966924] usb 3-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    2.966925] usb 3-2: Product: USB OPTICAL MOUSE 
+[    3.331909] usb 5-8: new high-speed USB device number 5 using ehci-pci
+[    3.507046] usb 5-8: New USB device found, idVendor=8564, idProduct=1000, bcdDevice= 1.00
+[    3.507050] usb 5-8: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.507053] usb 5-8: Product: Mass Storage Device
+[    3.507055] usb 5-8: Manufacturer: JetFlash
+[    3.507057] usb 5-8: SerialNumber: A1W9X6IN
+[    3.507328] usb-storage 5-8:1.0: USB Mass Storage device detected
+[    3.507557] scsi host3: usb-storage 5-8:1.0
+[    3.949709] udevd[595]: starting version 3.2.9
+[    4.002701] urandom_read: 1 callbacks suppressed
+[    4.002703] random: udevd: uninitialized urandom read (16 bytes read)
+[    4.003142] random: udevd: uninitialized urandom read (16 bytes read)
+[    4.003160] random: udevd: uninitialized urandom read (16 bytes read)
+[    4.322579] udevd[596]: starting eudev-3.2.9
+[    4.533695] scsi 3:0:0:0: Direct-Access     JetFlash Transcend 16GB   8.07 PQ: 0 ANSI: 4
+[    4.533960] sd 3:0:0:0: Attached scsi generic sg5 type 0
+[    4.535176] sd 3:0:0:0: [sdf] 31358976 512-byte logical blocks: (16.1 GB/15.0 GiB)
+[    4.536301] sd 3:0:0:0: [sdf] Write Protect is off
+[    4.536304] sd 3:0:0:0: [sdf] Mode Sense: 23 00 00 00
+[    4.537423] sd 3:0:0:0: [sdf] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    4.564790] random: crng init done
+[    4.564791] random: 3 urandom warning(s) missed due to ratelimiting
+[    4.576322]  sdf: sdf1 sdf2
+[    4.598932] sd 3:0:0:0: [sdf] Attached SCSI removable disk
+[    4.758140] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input3
+[    4.758191] ACPI: Power Button [PWRB]
+[    4.758294] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input4
+[    4.771945] ACPI: Power Button [PWRF]
+[    4.792767] intel_rng: FWH not detected
+[    4.794258] parport_pc 00:03: reported by Plug and Play ACPI
+[    4.794323] parport0: PC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+[    5.107845] input: PC Speaker as /devices/platform/pcspkr/input/input5
+[    5.150948] leds_ss4200: no LED devices found
+[    5.460529] iTCO_vendor_support: vendor-support=0
+[    5.720806] iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+[    5.720851] iTCO_wdt: Found a ICH7 or ICH7R TCO device (Version=2, TCOBASE=0x0460)
+[    5.721353] iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+[    5.988380] intel_powerclamp: No package C-state available
+[    5.988768] ppdev: user-space parallel port driver
+[    6.028229] intel_powerclamp: No package C-state available
+[    6.064223] intel_powerclamp: No package C-state available
+[    6.132260] intel_powerclamp: No package C-state available
+[    6.528837] hid: raw HID events driver (C) Jiri Kosina
+[    6.703355] usbcore: registered new interface driver usbhid
+[    6.703358] usbhid: USB HID core driver
+[    6.750001] input:   USB Keyboard as /devices/pci0000:00/0000:00:1d.2/usb3/3-1/3-1:1.0/0003:04D9:1702.0001/input/input6
+[    6.776106] snd_hda_intel 0000:01:00.1: Disabling MSI
+[    6.776117] snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+[    6.821219] hid-generic 0003:04D9:1702.0001: input,hidraw0: USB HID v1.10 Keyboard [  USB Keyboard] on usb-0000:00:1d.2-1/input0
+[    6.821578] input:   USB Keyboard System Control as /devices/pci0000:00/0000:00:1d.2/usb3/3-1/3-1:1.1/0003:04D9:1702.0002/input/input7
+[    6.838512] input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input9
+[    6.880042] input:   USB Keyboard Consumer Control as /devices/pci0000:00/0000:00:1d.2/usb3/3-1/3-1:1.1/0003:04D9:1702.0002/input/input8
+[    6.880174] input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input10
+[    6.880249] hid-generic 0003:04D9:1702.0002: input,hidraw1: USB HID v1.10 Device [  USB Keyboard] on usb-0000:00:1d.2-1/input1
+[    6.880516] input: USB OPTICAL MOUSE  as /devices/pci0000:00/0000:00:1d.2/usb3/3-2/3-2:1.0/0003:18F8:0F97.0003/input/input14
+[    6.880948] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input11
+[    6.881214] hid-generic 0003:18F8:0F97.0003: input,hidraw2: USB HID v1.10 Mouse [USB OPTICAL MOUSE ] on usb-0000:00:1d.2-2/input0
+[    6.881274] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input12
+[    6.881355] input: HDA NVidia HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input13
+[    6.881765] input: USB OPTICAL MOUSE  Keyboard as /devices/pci0000:00/0000:00:1d.2/usb3/3-2/3-2:1.1/0003:18F8:0F97.0004/input/input15
+[    6.944035] input: USB OPTICAL MOUSE  Consumer Control as /devices/pci0000:00/0000:00:1d.2/usb3/3-2/3-2:1.1/0003:18F8:0F97.0004/input/input16
+[    6.944207] hid-generic 0003:18F8:0F97.0004: input,hiddev0,hidraw3: USB HID v1.10 Keyboard [USB OPTICAL MOUSE ] on usb-0000:00:1d.2-2/input1
+[    7.001638] snd_hda_codec_realtek hdaudioC0D2: autoconfig for ALC888: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+[    7.001642] snd_hda_codec_realtek hdaudioC0D2:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    7.001644] snd_hda_codec_realtek hdaudioC0D2:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+[    7.001645] snd_hda_codec_realtek hdaudioC0D2:    mono: mono_out=0x0
+[    7.001647] snd_hda_codec_realtek hdaudioC0D2:    dig-out=0x1e/0x0
+[    7.001648] snd_hda_codec_realtek hdaudioC0D2:    inputs:
+[    7.001650] snd_hda_codec_realtek hdaudioC0D2:      Rear Mic=0x18
+[    7.001651] snd_hda_codec_realtek hdaudioC0D2:      Front Mic=0x19
+[    7.001652] snd_hda_codec_realtek hdaudioC0D2:      Line=0x1a
+[    7.001654] snd_hda_codec_realtek hdaudioC0D2:      CD=0x1c
+[    7.020300] input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/sound/card0/input18
+[    7.020455] input: HDA Intel Rear Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input19
+[    7.020669] input: HDA Intel Front Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input20
+[    7.020823] input: HDA Intel Line as /devices/pci0000:00/0000:00:1b.0/sound/card0/input21
+[    7.020979] input: HDA Intel Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input22
+[    7.021221] snd_hda_intel 0000:00:1b.0: device 1458:a002 is on the power_save denylist, forcing power_save to 0
+[    7.351494] nouveau 0000:01:00.0: vgaarb: deactivate vga console
+[    7.352539] Console: switching to colour dummy device 80x25
+[    7.352648] nouveau 0000:01:00.0: NVIDIA GK107 (0e7010a2)
+[    7.465120] nouveau 0000:01:00.0: bios: version 80.07.26.00.5b
+[    7.465841] nouveau 0000:01:00.0: fb: 1024 MiB DDR3
+[    8.776333] [TTM] Zone  kernel: Available graphics memory: 2012092 KiB
+[    8.776337] [TTM] Initializing pool allocator
+[    8.776344] [TTM] Initializing DMA pool allocator
+[    8.776358] nouveau 0000:01:00.0: DRM: VRAM: 1024 MiB
+[    8.776360] nouveau 0000:01:00.0: DRM: GART: 1048576 MiB
+[    8.776365] nouveau 0000:01:00.0: DRM: TMDS table version 2.0
+[    8.776367] nouveau 0000:01:00.0: DRM: DCB version 4.0
+[    8.776370] nouveau 0000:01:00.0: DRM: DCB outp 00: 02000f10 00000000
+[    8.776373] nouveau 0000:01:00.0: DRM: DCB outp 01: 01011f02 00020030
+[    8.776375] nouveau 0000:01:00.0: DRM: DCB outp 02: 02022f62 00020010
+[    8.776378] nouveau 0000:01:00.0: DRM: DCB conn 00: 00000000
+[    8.776379] nouveau 0000:01:00.0: DRM: DCB conn 01: 00001131
+[    8.776381] nouveau 0000:01:00.0: DRM: DCB conn 02: 00002261
+[    8.778193] nouveau 0000:01:00.0: DRM: MM: using COPY for buffer copies
+[    8.779674] snd_hda_intel 0000:01:00.1: bound 0000:01:00.0 (ops nv50_audio_component_bind_ops [nouveau])
+[    8.896867] nouveau 0000:01:00.0: DRM: allocated 1920x1080 fb: 0xa0000, bo 00000000c51a9fab
+[    8.896930] fbcon: nouveaudrmfb (fb0) is primary device
+[    8.932914] Console: switching to colour frame buffer device 240x67
+[    8.935402] nouveau 0000:01:00.0: [drm] fb0: nouveaudrmfb frame buffer device
+[    8.956183] [drm] Initialized nouveau 1.3.1 20120801 for 0000:01:00.0 on minor 0
+[    9.451904] Adding 998396k swap on /dev/sda5.  Priority:-2 extents:1 across:998396k FS
+[    9.507638] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+[   10.842686] audit: type=1400 audit(1692729603.376:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1444 comm="apparmor_parser"
+[   10.842691] audit: type=1400 audit(1692729603.376:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1444 comm="apparmor_parser"
+[   10.854294] audit: type=1400 audit(1692729603.388:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=1446 comm="apparmor_parser"
+[   10.867033] audit: type=1400 audit(1692729603.400:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oopslash" pid=1447 comm="apparmor_parser"
+[   10.867037] audit: type=1400 audit(1692729603.400:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=1448 comm="apparmor_parser"
+[   10.869761] audit: type=1400 audit(1692729603.404:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/x86_64-linux-gnu/lightdm/lightdm-guest-session" pid=1445 comm="apparmor_parser"
+[   10.869764] audit: type=1400 audit(1692729603.404:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/x86_64-linux-gnu/lightdm/lightdm-guest-session//chromium" pid=1445 comm="apparmor_parser"
+[   10.894760] audit: type=1400 audit(1692729603.428:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1450 comm="apparmor_parser"
+[   10.897790] audit: type=1400 audit(1692729603.432:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=1451 comm="apparmor_parser"
+[   10.898350] audit: type=1400 audit(1692729603.432:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1449 comm="apparmor_parser"
+[   15.935740] via-rhine 0000:04:02.0 eth0: Woke system up. Reason: Unknown
+[   15.935746] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   19.955897] ------------[ cut here ]------------
+[   19.955903] NETDEV WATCHDOG: eth0 (via-rhine): transmit queue 0 timed out
+[   19.955929] WARNING: CPU: 0 PID: 0 at net/sched/sch_generic.c:467 dev_watchdog+0x24d/0x260
+[   19.955930] Modules linked in: rfkill nouveau joydev snd_hda_codec_realtek mxm_wmi wmi snd_hda_codec_generic ledtrig_audio snd_hda_codec_hdmi video snd_hda_intel hid_generic ttm snd_intel_dspcfg soundwire_intel usbhid soundwire_generic_allocation hid snd_soc_core drm_kms_helper snd_compress cec soundwire_cadence snd_hda_codec drm ppdev snd_hda_core evdev i2c_algo_bit snd_hwdep coretemp iTCO_wdt intel_pmc_bxt kvm_intel iTCO_vendor_support watchdog soundwire_bus kvm snd_pcm serio_raw snd_timer pcspkr irqbypass snd soundcore parport_pc button parport rng_core acpi_cpufreq ext4 crc16 mbcache jbd2 crc32c_generic uas usb_storage sg sd_mod t10_pi crc_t10dif crct10dif_generic crct10dif_common ata_generic ata_piix libata scsi_mod ehci_pci uhci_hcd ehci_hcd via_rhine mii psmouse usbcore i2c_i801 i2c_smbus lpc_ich usb_common
+[   19.956009] CPU: 0 PID: 0 Comm: swapper/0 Tainted: G          I       5.10.0-9-amd64 #1 Debian 5.10.70-1
+[   19.956010] Hardware name: Gigabyte Technology Co., Ltd. P41-ES3G/P41-ES3G, BIOS F7 08/19/2010
+[   19.956014] RIP: 0010:dev_watchdog+0x24d/0x260
+[   19.956017] Code: a9 ca fd ff eb a9 4c 89 f7 c6 05 34 82 10 01 01 e8 58 9d fa ff 44 89 e9 4c 89 f6 48 c7 c7 98 9d 76 9c 48 89 c2 e8 46 2f 14 00 <0f> 0b eb 8a 66 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 66 66 66
+[   19.956019] RSP: 0018:ffffb3da80003eb8 EFLAGS: 00010286
+[   19.956021] RAX: 0000000000000000 RBX: ffff8b48c7970200 RCX: ffff8b48ebc18a08
+[   19.956023] RDX: 00000000ffffffd8 RSI: 0000000000000027 RDI: ffff8b48ebc18a00
+[   19.956025] RBP: ffff8b48c806e3dc R08: 0000000000000000 R09: ffffb3da80003cd8
+[   19.956026] R10: ffffb3da80003cd0 R11: ffffffff9cccb428 R12: ffff8b48c806e480
+[   19.956028] R13: 0000000000000000 R14: ffff8b48c806e000 R15: ffff8b48c7970280
+[   19.956030] FS:  0000000000000000(0000) GS:ffff8b48ebc00000(0000) knlGS:0000000000000000
+[   19.956032] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[   19.956034] CR2: 00007f66fe988718 CR3: 0000000102f9e000 CR4: 00000000000406f0
+[   19.956035] Call Trace:
+[   19.956039]  <IRQ>
+[   19.956044]  ? pfifo_fast_enqueue+0x150/0x150
+[   19.956049]  call_timer_fn+0x29/0xf0
+[   19.956051]  __run_timers.part.0+0x1d3/0x240
+[   19.956055]  ? hpet_rtc_timer_init.part.0+0xb0/0xb0
+[   19.956057]  ? ktime_get+0x38/0xa0
+[   19.956061]  ? native_x2apic_icr_read+0x10/0x10
+[   19.956064]  ? lapic_next_event+0x1d/0x20
+[   19.956067]  ? clockevents_program_event+0x8d/0xf0
+[   19.956069]  run_timer_softirq+0x26/0x50
+[   19.956072]  __do_softirq+0xc5/0x275
+[   19.956075]  asm_call_irq_on_stack+0x12/0x20
+[   19.956077]  </IRQ>
+[   19.956081]  do_softirq_own_stack+0x37/0x40
+[   19.956084]  irq_exit_rcu+0x8e/0xc0
+[   19.956088]  sysvec_apic_timer_interrupt+0x36/0x80
+[   19.956090]  asm_sysvec_apic_timer_interrupt+0x12/0x20
+[   19.956094] RIP: 0010:native_safe_halt+0xe/0x10
+[   19.956096] Code: 02 20 48 8b 00 a8 08 75 c4 e9 7b ff ff ff cc cc cc cc cc cc cc cc cc cc cc cc cc cc e9 07 00 00 00 0f 00 2d a6 6f 54 00 fb f4 <c3> 90 e9 07 00 00 00 0f 00 2d 96 6f 54 00 f4 c3 cc cc 66 66 66 66
+[   19.956098] RSP: 0018:ffffffff9cc03e48 EFLAGS: 00000246
+[   19.956100] RAX: 0000000000004000 RBX: 0000000000000001 RCX: ffff8b48ebc2c9c0
+[   19.956102] RDX: ffff8b48ebc00000 RSI: ffff8b48c087a000 RDI: ffff8b48c087a064
+[   19.956103] RBP: ffff8b48c087a064 R08: ffffffff9cdb9120 R09: 0000000000000018
+[   19.956105] R10: 0000000000000f94 R11: 00000000000004b3 R12: 0000000000000001
+[   19.956107] R13: ffffffff9cdb91a0 R14: 0000000000000001 R15: 0000000000000000
+[   19.956111]  acpi_idle_do_entry+0x46/0x50
+[   19.956114]  acpi_idle_enter+0x86/0xc0
+[   19.956118]  cpuidle_enter_state+0x89/0x350
+[   19.956121]  cpuidle_enter+0x29/0x40
+[   19.956125]  do_idle+0x1ef/0x2b0
+[   19.956127]  cpu_startup_entry+0x19/0x20
+[   19.956131]  start_kernel+0x587/0x5a8
+[   19.956135]  secondary_startup_64_no_verify+0xb0/0xbb
+[   19.956138] ---[ end trace cc89d3d93bd1a219 ]---
+[   19.967217] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   19.967357] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   20.077252] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.007 msecs
+[   20.077252] perf: interrupt took too long (11801 > 2500), lowering kernel.perf_event_max_sample_rate to 16750
+[   23.955896] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   23.963017] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   27.955896] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   27.963008] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   33.950961] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   33.950982] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   49.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   49.947000] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   63.955897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   63.962992] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   67.955897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   67.963003] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   71.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   71.962986] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   79.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   79.962983] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[   95.955898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[   95.963004] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  109.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  109.946995] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  113.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  113.946986] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  117.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  117.946983] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  123.955897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  123.962991] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  141.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  141.946997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  153.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  153.946997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  157.939898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  157.946990] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  161.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  161.946984] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  169.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  169.946997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  185.939894] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  185.947010] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  499.955898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  499.963002] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  503.955897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  503.962987] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  507.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  507.962995] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  513.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  513.946982] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  529.939895] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  529.946998] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  543.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  543.962987] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  547.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  547.963002] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  551.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  551.962984] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  557.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  557.946985] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  575.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  575.962998] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  589.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  589.946993] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  593.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  593.946983] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  597.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  597.946984] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  603.955892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  603.962986] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  621.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  621.946997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  633.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  633.946989] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  637.946958] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  637.946978] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  641.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  641.946990] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  649.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  649.946924] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  665.939891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  665.946997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  979.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  979.962992] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  983.955894] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  983.962985] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  987.955896] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  987.963006] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[  993.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[  993.946981] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1009.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1009.947166] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1023.955895] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1023.962987] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1027.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1027.962994] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1031.955890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1031.962923] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1039.955888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1039.962907] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1055.955889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1055.962922] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1069.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1069.946925] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1073.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1073.946932] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1077.939889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1077.946906] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1083.955889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1083.962908] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1099.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1099.962997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1113.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1113.946935] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1117.939891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1117.946981] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1121.939898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1121.946990] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1129.939893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1129.947164] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1145.939896] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1145.947002] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1459.955892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1459.963013] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1463.955894] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1463.962992] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1467.955890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1467.962997] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1473.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1473.939890] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1489.939897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1489.947003] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1503.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1503.963019] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1507.962975] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1507.963012] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1511.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1511.962910] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1519.955898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1519.962925] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1535.955892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1535.962999] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1549.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1549.946925] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1553.939898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1553.946988] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1557.939898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1557.946990] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1563.955888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1563.962905] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1579.955897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1579.963000] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1593.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1593.946925] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1597.939891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1597.946985] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1601.939894] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1601.946985] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1609.939895] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1609.947001] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1625.939891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1625.947192] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1939.955889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1939.962928] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1943.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1943.962985] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1947.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1947.963011] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1953.939889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1953.946910] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1969.939887] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1969.946922] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1983.955892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1983.962988] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1987.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1987.963002] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1991.955900] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1991.962988] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 1999.955888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 1999.962905] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2015.955889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2015.962919] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2029.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2029.946914] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2033.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2033.946905] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2037.939889] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2037.946906] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2045.939897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2045.947003] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2061.937420] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2061.937448] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2073.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2073.946995] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2077.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2077.946982] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2081.939888] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2081.946905] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2089.939890] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2089.946993] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2105.939895] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2105.946938] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2380.247913] usb 5-2: new high-speed USB device number 6 using ehci-pci
+[ 2380.375903] usb 5-2: device descriptor read/64, error -32
+[ 2380.899903] usb 5-2: device descriptor read/64, error -71
+[ 2381.135921] usb 5-2: new high-speed USB device number 7 using ehci-pci
+[ 2381.292793] usb 5-2: New USB device found, idVendor=0e8d, idProduct=201d, bcdDevice= 4.04
+[ 2381.292796] usb 5-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 2381.292798] usb 5-2: Product: S98Pro
+[ 2381.292800] usb 5-2: Manufacturer: DOOGEE
+[ 2381.292801] usb 5-2: SerialNumber: S98PRO0000000006945
+[ 2419.955896] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2419.963001] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2423.955898] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2423.962990] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2426.366547] usb 5-2: USB disconnect, device number 7
+[ 2426.831904] usb 5-2: new high-speed USB device number 8 using ehci-pci
+[ 2426.988847] usb 5-2: New USB device found, idVendor=0e8d, idProduct=2005, bcdDevice= 4.04
+[ 2426.988850] usb 5-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 2426.988852] usb 5-2: Product: S98Pro
+[ 2426.988854] usb 5-2: Manufacturer: DOOGEE
+[ 2426.988856] usb 5-2: SerialNumber: S98PRO0000000006945
+[ 2427.081605] usbcore: registered new interface driver cdc_ether
+[ 2427.088578] rndis_host 5-2:1.0 usb0: register 'rndis_host' at usb-0000:00:1d.7-2, RNDIS device, d6:10:38:66:4d:95
+[ 2427.088685] usbcore: registered new interface driver rndis_host
+[ 2427.955891] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2427.963031] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2433.939892] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2433.946994] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2449.939897] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2449.947031] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2463.962491] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2463.963019] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2465.656920] fuse: init (API version 7.32)
+[ 2467.962984] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2467.963010] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2471.955893] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2471.963019] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2474.338234] FAT-fs (sdf2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 2479.997215] via-rhine 0000:04:02.0 eth0: Transmit timed out, status ffff, PHY status ffff, resetting...
+[ 2480.019917] via-rhine 0000:04:02.0 eth0: Reset not complete yet. Trying harder.
+[ 2589.739306] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.211 msecs
+[ 2589.739308] perf: interrupt took too long (19654 > 14751), lowering kernel.perf_event_max_sample_rate to 10000
+[ 2728.081807] perf: interrupt took too long (28201 > 24567), lowering kernel.perf_event_max_sample_rate to 7000
+[ 2816.297997] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.325 msecs
+[ 2849.741729] perf: interrupt took too long (40077 > 35251), lowering kernel.perf_event_max_sample_rate to 4750
+[ 2947.491294] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 7.463 msecs
+[ 2947.491294] perf: interrupt took too long (98209 > 50096), lowering kernel.perf_event_max_sample_rate to 2000
+[ 3032.088345] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.332 msecs
+[ 3235.255371] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 9.289 msecs
+[ 3487.776223] hrtimer: interrupt took 11930879 ns
+[ 3618.736817] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.523 msecs
+[ 4078.638976] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 2.155 msecs
+[ 4143.728098] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 4377.658339] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 4544.150346] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 9.169 msecs
+[ 5271.091291] perf: interrupt took too long (129260 > 122761), lowering kernel.perf_event_max_sample_rate to 1500
+[ 5650.294511] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 9.246 msecs
+[ 5665.302012] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 5858.486400] perf: interrupt took too long (169291 > 161575), lowering kernel.perf_event_max_sample_rate to 1000
+[ 6187.310924] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 6402.590616] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 6413.367215] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
