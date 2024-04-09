@@ -1,0 +1,7 @@
+Category: desktop
+Board URL: POS-PIG41BO brazil clone IPM41-D3 (INTEL DG41WV)
+ROM package: DIP-8
+ROM protocol: SPI
+ROM socketed: y
+Flashrom support: y
+Release year: 2010
