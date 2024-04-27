@@ -30,4 +30,7 @@ config PRERAM_CBMEM_CONSOLE_SIZE
 config DIMM_SPD_SIZE
 	default 512 #DDR4
 
+config CBFS_SIZE
+	default 0x600000 # 8mb chip, 2mb available
+
 endif
