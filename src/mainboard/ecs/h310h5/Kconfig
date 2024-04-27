@@ -1,4 +1,4 @@
-if BOARD_ECS_H310H5
+if BOARD_ECS_H310CH5
 
 config BOARD_SPECIFIC_OPTIONS
 	def_bool y
@@ -18,10 +18,10 @@ config BOARD_SPECIFIC_OPTIONS
 #	default y
 
 config MAINBOARD_DIR
-	default "ecs/h310h5"
+	default "ecs/h310ch5"
 
 config MAINBOARD_PART_NUMBER
-	default "H310H5"
+	default "H310CH5"
 
 config PRERAM_CBMEM_CONSOLE_SIZE
 	hex
