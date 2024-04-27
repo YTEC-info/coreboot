@@ -1,0 +1,2 @@
+config BOARD_ECS_H310CH5
+	bool "H310CH5-M2"
