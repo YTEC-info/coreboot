@@ -1,8 +1,0 @@
-Category: desktop
-Board URL: https://www.ecs.com.tw/en/Product/Motherboard/H310H5-M2/
-ROM package: SOIC-8
-ROM protocol: SPI
-ROM socketed: n
-ROM URL: 
-Flashrom support: y
-Release year: 2018
