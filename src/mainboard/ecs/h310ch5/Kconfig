@@ -31,6 +31,6 @@ config DIMM_SPD_SIZE
 	default 512 #DDR4
 
 config CBFS_SIZE
-	default 0x100000 # 8mb chip, ??mb available
+	default 0x00800000 # 8mb chip, ??mb available
 
 endif
