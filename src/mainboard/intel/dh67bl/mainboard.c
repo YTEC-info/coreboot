@@ -4,6 +4,11 @@
 #include <drivers/intel/gma/int15.h>
 #include <southbridge/intel/bd82x6x/pch.h>
 
+static void mainboard_final(void *unused)
+{
+       beep(1500, 100);
+}
+
 static void mainboard_enable(struct device *dev)
 {
 	install_intel_vga_int15_handler(GMA_INT15_ACTIVE_LFP_NONE,
@@ -13,4 +18,5 @@ static void mainboard_enable(struct device *dev)
 
 struct chip_operations mainboard_ops = {
 	.enable_dev = mainboard_enable,
+	.final = mainboard_final,
 };
