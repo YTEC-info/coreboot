@@ -1,0 +1,5 @@
+config BOARD_LENOVO_IH61MV1
+	bool "IH61M Ver:1.0"
+
+config BOARD_LENOVO_IH61MV4
+	bool "IH61M Ver:4.2"
