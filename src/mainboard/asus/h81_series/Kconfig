@@ -1,0 +1,25 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+if BOARD_ASUS_ALL_SERIES
+
+config BOARD_SPECIFIC_OPTIONS
+	def_bool y
+	select BOARD_ROMSIZE_KB_8192
+	select HAVE_ACPI_RESUME
+	select HAVE_ACPI_TABLES
+	select NORTHBRIDGE_INTEL_HASWELL
+	select SERIRQ_CONTINUOUS_MODE
+	select SOUTHBRIDGE_INTEL_LYNXPOINT
+
+config MAINBOARD_DIR
+	string
+	default "asus/all_series"
+
+config MAINBOARD_PART_NUMBER
+	string
+	default "All Series"
+
+config USBDEBUG_HCD_INDEX # FIXME: check this
+	int
+	default 2
+endif
