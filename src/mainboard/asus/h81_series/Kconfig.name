@@ -1,4 +1,4 @@
 ## SPDX-License-Identifier: GPL-2.0-only
 
-config BOARD_ASUS_ALL_SERIES
-	bool "All Series"
+config BOARD_ASUS_H81_SERIES
+	bool "H81"
